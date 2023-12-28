@@ -12,7 +12,7 @@ function getComputerChoice() {
 
 function playRound(playerSelection, computerSelection) {
     playerSelection = playerSelection[0].toUpperCase() + playerSelection.slice(1).toLowerCase();
-    return getWinner(playerSelection, getComputerChoice);
+    return getWinner(playerSelection, computerSelection);
 }
 
 function getWinner(playerSelection, computerSelection) {
