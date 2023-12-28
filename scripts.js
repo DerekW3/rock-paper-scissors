@@ -40,3 +40,22 @@ function getWinner(playerSelection, computerSelection) {
         return "Invalid Input";
     }
 }
+
+function game() {
+    let wins = 0;
+    for (let i = 0; i < 5; i++) {
+        let input = prompt("Input your choice!", "");
+        let result = playRound(input, getComputerChoice());
+
+        console.log(result);
+        if (result === "Win") {
+            wins++;
+        }
+    }
+
+    if (wins >= 3) {
+        return "You Won!";
+    } else {
+        return "You Loss!";
+    }
+}
