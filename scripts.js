@@ -48,6 +48,13 @@ function game() {
         let result = playRound(input, getComputerChoice());
 
         console.log(result);
+        if (result === "Tie") {
+            while (result === "Tie") {
+                console.log("Tie: Playing Again");
+                input = prompt("Input your choice!", "");
+                result = playRound(input, getComputerChoice());
+            }
+        }
         if (result === "Win") {
             wins++;
         }
