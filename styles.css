@@ -26,16 +26,16 @@ button {
 }
 
 #results {
-    background-color: transparent;
     font-size: 30px;
+    background-color: transparent;
 }
 
 .container {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    border-radius: 25px;
     min-width: 50vw;
     min-height: 20vh;
+    border-radius: 25px;
     gap: 20px;
 }
